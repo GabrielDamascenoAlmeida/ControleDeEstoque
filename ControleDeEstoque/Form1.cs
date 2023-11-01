@@ -71,7 +71,7 @@ namespace ControleDeEstoque
                 conexaoMYSQL.Open();
                 MySqlCommand comando = new MySqlCommand("delete from tecnico where id_tec=" + txtId.Text + ";", conexaoMYSQL);
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Técnico excluído com sucesso!");
+                MessageBox.Show("Técnico excluído  com sucesso!");
                 txtNome.Text = "";
                 txtCargo.Text = "";
                 txtId.Text = "";
