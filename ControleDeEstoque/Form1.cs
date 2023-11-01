@@ -19,12 +19,13 @@ namespace ControleDeEstoque
         }
 
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             CarregarDadosBanco();
         }
 
-        private void CarregarDadosBanco() 
+        private void CarregarDadosBanco()
         {
             string conexao = "server=localhost;database=assistencia;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
@@ -87,12 +88,14 @@ namespace ControleDeEstoque
             conexaoMYSQL.Open();
             MySqlCommand comando = new MySqlCommand("insert into tecnico (nome_tec,cargo) values ('" + txtNome.Text + "','" + txtCargo.Text + "');", conexaoMYSQL);
             comando.ExecuteNonQuery();
-            MessageBox.Show("Cadastro realizado com sucesso!!!");
+            MessageBox.Show("Cadastro realizado  com sucesso!!!");
             txtNome.Text = "";
             txtCargo.Text = "";
             txtId.Text = "";
             groupBox1.Visible = false;
             CarregarDadosBanco();
+
+
         }
     }
 }
