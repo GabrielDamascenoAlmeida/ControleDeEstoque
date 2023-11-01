@@ -63,7 +63,7 @@ namespace ControleDeEstoque
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            DialogResult caixaMensagem = MessageBox.Show("Deseja exluir esse técnico?", "Alerta", MessageBoxButtons.YesNo);
+            DialogResult caixaMensagem = MessageBox.Show("Deseja exluir esse técnico ?", "Alerta", MessageBoxButtons.YesNo);
 
             if (caixaMensagem == DialogResult.Yes)
             {
