@@ -196,6 +196,7 @@ namespace ControleDeEstoque
             this.btnCadClient.TabIndex = 17;
             this.btnCadClient.Text = "Cadastrar";
             this.btnCadClient.UseVisualStyleBackColor = true;
+            this.btnCadClient.Click += new System.EventHandler(this.btnCadClient_Click);
             // 
             // btnAlterClient
             // 
@@ -242,6 +243,7 @@ namespace ControleDeEstoque
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Cliente";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
